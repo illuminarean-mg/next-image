@@ -1,21 +1,8 @@
 import Image from "next/image";
+import sampleImage from "../../public/sample.png";
 
 export default function Home() {
   return (
-    <div
-      style={{
-        position: "relative",
-        height: 400,
-      }}
-    >
-      <Image
-        style={{
-          objectFit: "contain",
-        }}
-        src="/sample.png"
-        alt="sample image"
-        fill
-      />
-    </div>
+    <Image src={sampleImage} alt="sample image" fill objectFit="contain" />
   );
 }
