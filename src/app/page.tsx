@@ -4,11 +4,18 @@ export default function Home() {
   return (
     <div
       style={{
-        height: 400,
         position: "relative",
+        height: 400,
       }}
     >
-      <Image src="/sample.png" alt="sample image" fill />
+      <Image
+        style={{
+          objectFit: "contain",
+        }}
+        src="/sample.png"
+        alt="sample image"
+        fill
+      />
     </div>
   );
 }
